@@ -34,6 +34,7 @@ namespace Cqrs.Api
             services.Configure<MongoRepositorySettings>(mongoSettings);
             services.AddSingleton<IMongoClient>(new MongoClient(clientSettings));
             services.AddSingleton<IPersonRepository, PersonRepository>();
+
         }
     }
 }
